@@ -18,8 +18,9 @@ body {
 
 .card {
   /* border: 1px solid white; */
+  background-color: hsl(216, 50%, 16%);
   border-radius: 20px;
-  box-shadow: 3px 3px 20px black;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7);
   padding: 1em;
   width: 275px;
 }
@@ -29,6 +30,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.card-content_overlay {
+  
 }
 
 .card-content_img {
@@ -81,4 +86,38 @@ body {
 
 .card-content_meta-left-clock {
   margin-right: 2px;
+}
+
+.card-content_user {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.card-content_user-avatar {
+  width: 25px;
+  border: 1px solid rgb(175, 230, 255);
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.card-content_user-name {
+  color: rgb(175, 230, 255);
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
+}
+
+.card-content_user-name span {
+  color: rgb(230, 230, 230);
+  font-size: 0.75rem;
+}
+
+.card-content_details-title:hover,
+.card-content_user-name span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card-content_details-overlay:hover {
+  background: #00fff7;
 }
