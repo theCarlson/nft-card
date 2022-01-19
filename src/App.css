@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0c1d38;
+  background-color: hsl(217, 54%, 11%);
   font-family: 'Outfit', Arial, Helvetica, sans-serif;
 }
 
@@ -17,9 +17,8 @@ body {
 }
 
 .card {
-  /* border: 1px solid white; */
   background-color: hsl(216, 50%, 16%);
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7);
   padding: 1em;
   width: 275px;
@@ -30,15 +29,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.card-content_overlay-eye {
+  position: absolute;
+  display: none;
 }
 
 .card-content_overlay {
-  
+  position: absolute;
+  display: none;
+  background-color: #00fff7;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
 }
 
 .card-content_img {
-  border-radius: 10px;
   width: 100%;
+  border-radius: 6px;
+}
+
+.card-content:hover .card-content_overlay-eye {
+  display: block;
+  cursor: pointer;
+}
+
+.card-content:hover .card-content_overlay {
+  display: block;
+  cursor: pointer;
 }
 
 .card-content_details-title {
@@ -47,12 +68,18 @@ body {
   font-size: 1.125rem;
 }
 
+.card-content_details-title:hover,
+.card-content_user-name span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
 .card-content_details-explanation {
-  color: rgb(175, 230, 255);
-  font-size: 0.8rem;
+  /* color: rgb(175, 230, 255); */
+  color: hsl(215, 51%, 70%);
+  font-size: 0.85rem;
   font-weight: 300;
-  letter-spacing: 0.8px;
-  /* text-align: justify; */
+  letter-spacing: 0.4px;
 }
 
 .card-content_meta {
@@ -60,7 +87,7 @@ body {
   justify-content: space-between;
   padding: 1rem 0;
   font-size: 0.75rem;
-  border-bottom: solid rgb(175, 230, 255, 0.125);
+  border-bottom: solid hsl(215, 32%, 27%);
   border-bottom-width: thin;
 }
 
@@ -70,6 +97,7 @@ body {
 
 .card-content_meta-left p {
   color: #00fff7;
+  letter-spacing: 0.7px;
 }
 
 .card-content_meta-left-pendant {
@@ -81,7 +109,8 @@ body {
 }
 
 .card-content_meta-right p {
-  color: rgb(175, 230, 255);
+  /* color: rgb(175, 230, 255); */
+  color: hsl(215, 51%, 70%);
 }
 
 .card-content_meta-left-clock {
@@ -91,18 +120,20 @@ body {
 .card-content_user {
   display: flex;
   align-items: center;
-  padding: 15px 0;
+  padding: 15px 0 5px;
 }
 
 .card-content_user-avatar {
   width: 25px;
-  border: 1px solid rgb(175, 230, 255);
+  /* border: 1px solid rgb(175, 230, 255); */
+  border: 1px solid hsl(215, 51%, 70%);
   border-radius: 50px;
   margin-right: 15px;
 }
 
 .card-content_user-name {
-  color: rgb(175, 230, 255);
+  /* color: rgb(175, 230, 255); */
+  color: hsl(215, 51%, 70%);
   font-size: 0.75rem;
   letter-spacing: 0.3px;
 }
@@ -110,14 +141,4 @@ body {
 .card-content_user-name span {
   color: rgb(230, 230, 230);
   font-size: 0.75rem;
-}
-
-.card-content_details-title:hover,
-.card-content_user-name span:hover {
-  color: #00fff7;
-  cursor: pointer;
-}
-
-.card-content_details-overlay:hover {
-  background: #00fff7;
 }
