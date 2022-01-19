@@ -11,7 +11,7 @@ Your challenge is to build out this preview card component and get it looking as
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-Read More Here at Frontend Mentor: [Frontend Mentor NFT Challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
+Read More Here: [Frontend Mentor NFT Challenge](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
 
 ## Deployed Project: 
 https://nifty-murdock-d18e1c.netlify.app/
