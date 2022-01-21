@@ -1,11 +1,14 @@
-import React from 'react';
-import nftImg from './images/image-equilibrium.jpg';
-import avatar from './images/image-avatar.png';
+import Card from './components/layout/Card';
+import CardContent from './components/CardContent';
+import CardDetails from './components/CardDetails';
+import CardMeta from './components/CardMeta';
+import CardUser from './components/CardUser';
 import './App.css';
 
 const App = () => {
   return (
     <div className='container'>
+<<<<<<< HEAD
       <div className='card'>
         <div className='card-content'>
           <div className='card-content_overlay'></div>
@@ -77,6 +80,14 @@ const App = () => {
           </div>
         </div>
       </div>
+=======
+      <Card>
+        <CardContent />
+        <CardDetails />
+        <CardMeta />
+        <CardUser />
+      </Card>
+>>>>>>> e4cf92113581ed7cc4447586e52762d02d5687cf
     </div>
   );
 };
