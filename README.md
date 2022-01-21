@@ -1,6 +1,6 @@
 # Frontend Mentor - NFT Preview Card Component
 
-[NFT Card Component](./design/nft-component.gif)
+![NFT Card Component](./design/nft-component.gif)
 
 ## Overview
 
